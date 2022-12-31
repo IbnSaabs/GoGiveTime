@@ -16,7 +16,7 @@ const RegistrationSuccess = () => {
           Successful Registration
         </p>
         <div className="mt-5 text-center self-stretch mb-14">
-          <Link to="/login">
+          <Link to="/sign-in">
             <button
               type="button"
               className="text-white w-4/5 sm:w-1/2 border  bg-[#01B0F1] hover:bg-[#039ad1] focus:ring-4 focus:ring-blue-300 shadow-sm font-medium rounded-[10px] text-sm px-5 py-2.5 "
