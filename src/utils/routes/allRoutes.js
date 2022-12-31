@@ -13,6 +13,7 @@ import {
 import App from "../../App";
 import SelectInterests from "../../views/interest/SelectInterest";
 import AddExpertise from "../../views/interest/AddExpertise";
+import RegistrationSuccess from "../../views/interest/RegistrationSuccessfull";
 
 const routes = [
   // Authentication route
@@ -37,6 +38,7 @@ const routes = [
   //Interest Routes
   { path: "/select-interest", element: <SelectInterests /> },
   { path: "/add-expertise", element: <AddExpertise /> },
+  { path: "/registration-successfull", element: <RegistrationSuccess /> },
 ];
 
 export { routes };
