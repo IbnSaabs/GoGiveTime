@@ -3,12 +3,14 @@ import svg1 from "../../assets/pattern-top.svg";
 import svg2 from "../../assets/pattern-bottom.svg";
 import { FiArrowLeft } from "react-icons/fi";
 import Header from "./Header";
+import { Link } from "react-router-dom";
 
 const InterestPageLayout = ({
   className,
   cardClassName,
   title,
   subTitle,
+  linkTo,
   children,
 }) => {
   return (
@@ -34,10 +36,12 @@ const InterestPageLayout = ({
           >
             {/* card header  */}
             {title && (
-              <div className="mb-5 px-[22px] lg:px-16">
+              <div className="mb-5 px-[22px] sm:px-10 lg:px-16">
                 <div className="flex mb-3 justify-between items-center ">
                   <div className=" text-xl hover:cursor-pointer">
-                    <FiArrowLeft />
+                    <Link to={linkTo}>
+                      <FiArrowLeft />
+                    </Link>
                   </div>
                   <div className="text-xl sm:text-2xl  font-medium mx-auto">
                     {title}

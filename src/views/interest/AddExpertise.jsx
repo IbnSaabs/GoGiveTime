@@ -28,16 +28,17 @@ const AddExpertise = () => {
   return (
     <>
       <InterestPageLayout
-        className="relative h-[calc(100vh-73px)] flex justify-center"
-        cardClassName="flex flex-col shadow-lg rounded-3xl border max-h-[90%] h-fit  w-[90%] sm:w-3/6 bg-white z-10  py-5 mt-5"
+        className="relative h-[calc(100vh-73px)] flex justify-center items-center"
+        cardClassName="flex flex-col shadow-lg rounded-3xl border max-h-[90%] h-fit  w-[90%] sm:w-4/5 lg:w-3/6 bg-white z-10  py-5"
         title="Add Expertise"
         subTitle="Your feed will be personalised based on your skills. Don’t worry
                 you can change it later."
+        linkTo="/select-interest"
       >
         {/* card body  */}
-        <div className="  px-2 lg:px-20 mb-5">
+        <div className="  px-2 sm:px-10 lg:px-20 mb-5">
           <p className="text-lg font-normal mb-2">Are you a</p>
-          <div className="flex gap-1 justify-between items-center ">
+          <div className="flex flex-wrap sm:flex-nowrap gap-1 justify-evenly sm:justify-between items-center ">
             {select.map((item, index) => (
               <button
                 key={item.id}
@@ -62,7 +63,7 @@ const AddExpertise = () => {
         {selected === "professional" && <Professional />}
         {selected === "communityLeader" && <CommunityLeader />}
 
-        {!selected && <div className="py-10"></div>}
+        {!selected && <div className="py-20"></div>}
       </InterestPageLayout>
     </>
   );
