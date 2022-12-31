@@ -4,14 +4,39 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  object-fit: contain;
 }
 
 body {
-  margin: 0;
+  overflow-x: hidden;
   font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+
+.hero {
+height: 150vh;
+background-image: url('/src/assets/Landing_Page_Images/Frame\ 1.svg');
+background-position: top;
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+.volunteer {
+  background-image: url('/src/assets/Landing_Page_Images/Group\ 48095442.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.mission {
+  background-image: url('/src/assets/Landing_Page_Images/Group\ 48095446.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
 
 @tailwind base;
 @tailwind components;
