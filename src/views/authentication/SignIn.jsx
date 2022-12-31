@@ -10,18 +10,18 @@ import { Link } from "react-router-dom";
 export const SignIn = () => {
     const [isPasswordVisible, setIsPasswordVisible] = React.useState(false);
 
-    const handleSignIn = () => {
-
-    }
+    const handleSignIn = () => {}
 
     return(
         <div>
-            <AuthPageLayout text='Sign up'>
+            <AuthPageLayout text='Sign up' path="/sign-up" >
                 <AuthCard
                     src={Logo}
                     alt='GGT Logo'
                     text='Sign In'
                     googleAuth={true}
+                    googleAuthText="Sign in with Google"
+                    appleAuthText="Sign in with Apple"
                 >
                     <form>
                         <div className="mt-5">
@@ -36,7 +36,7 @@ export const SignIn = () => {
                                 id="email"
                                 required
                                 className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" 
-                                placeholder="abc@email.com" />
+                                placeholder="Your Email" />
                             </div>
 
                             {/* password field  */}
@@ -47,14 +47,15 @@ export const SignIn = () => {
                                 <input 
                                   type="password" 
                                   id="password"
+                                  placeholder="Your password"
                                   required
                                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" 
                                 />
-                                <button 
+                                <div 
                                     onClick={() => setIsPasswordVisible(!isPasswordVisible)}
-                                    className="text-gray-900 absolute right-2.5 bottom-2.5 mr-2 focus:outline-none text-md">
+                                    className="text-gray-900 absolute right-2.5 bottom-2.5 mr-2 focus:outline-none text-md hover:cursor-pointer">
                                     { isPasswordVisible ? <BsEye/> : <BsEyeSlash/> }
-                                </button>
+                                </div>
                             </div>
 
                             {/* remember me and forgot password  */}
