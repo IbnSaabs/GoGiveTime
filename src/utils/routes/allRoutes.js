@@ -11,6 +11,7 @@ import {
 } from "../../views/authentication";
 
 import App from "../../App";
+import SelectInterests from "../../views/interest/SelectInterest";
 
 const routes = [
   // Authentication route
@@ -29,10 +30,11 @@ const routes = [
 
   //include other routes and a descriptive comment here
 
-  {
-    path: "/",
-    element: <App />,
-  },
+  //test route for preloader
+  { path: "/", element: <App /> },
+
+  //Interest Routes
+  { path: "/select-interest", element: <SelectInterests /> },
 ];
 
 export { routes };
