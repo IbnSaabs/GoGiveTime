@@ -28,6 +28,7 @@ const AddExpertise = () => {
   return (
     <>
       <InterestPageLayout
+        btnText="Sign in"
         className="relative h-[calc(100vh-73px)] flex justify-center"
         cardClassName="flex flex-col shadow-lg rounded-3xl border max-h-[90%] h-fit  w-[90%] sm:w-3/6 bg-white z-10  py-5 mt-5"
         title="Add Expertise"

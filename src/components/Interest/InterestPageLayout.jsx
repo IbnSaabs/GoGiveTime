@@ -5,6 +5,7 @@ import { FiArrowLeft } from "react-icons/fi";
 import Header from "./Header";
 
 const InterestPageLayout = ({
+  btnText,
   className,
   cardClassName,
   title,
@@ -13,7 +14,7 @@ const InterestPageLayout = ({
 }) => {
   return (
     <>
-      <Header />
+      <Header text={btnText} />
       <div className={className}>
         <img
           src={svg1}
