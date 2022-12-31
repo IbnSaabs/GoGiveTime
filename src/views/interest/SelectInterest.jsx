@@ -116,7 +116,7 @@ const SelectInterests = () => {
       title="Select Your Interest"
       subTitle="Your feed will be personalized based on your interests. Don’t
               worry you can change it later."
-      linkTo="/login"
+      linkTo="/sign-in"
     >
       {/* card header end  */}
       <div className="grid grid-cols-3 sm:grid-cols-4 gap-5  ">
