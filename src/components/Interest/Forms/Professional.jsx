@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Professional = () => {
   return (
     <form>
-      <div className="grid gap-2  mb-6 px-2 lg:px-20 ">
+      <div className="grid gap-2  mb-6 px-2 sm:px-10 lg:px-20 ">
         <select
           defaultValue="1"
           id="industry"
@@ -44,12 +45,16 @@ const Professional = () => {
           />
         </div>
 
-        <button
-          type="submit"
-          className="text-white w-4/5 sm:w-1/2 mt-5 border  bg-[#01B0F1] hover:bg-[#039ad1] focus:ring-4 focus:ring-blue-300 shadow-xl font-medium rounded-[10px] text-sm px-5 py-2.5 mx-auto mb-2 "
-        >
-          Submit
-        </button>
+        <div className="text-center mt-5">
+          <Link to={"/registration-successfull"}>
+            <button
+              type="submit"
+              className="text-white w-4/5 sm:w-1/2 border  bg-[#01B0F1] hover:bg-[#039ad1] focus:ring-4 focus:ring-blue-300 shadow-md font-medium rounded-[10px] text-sm px-5 py-2.5 mx-auto mb-2 "
+            >
+              Submit
+            </button>
+          </Link>
+        </div>
       </div>
     </form>
   );
