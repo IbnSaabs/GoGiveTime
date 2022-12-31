@@ -12,6 +12,7 @@ import {
 
 import App from "../../App";
 import SelectInterests from "../../views/interest/SelectInterest";
+import AddExpertise from "../../views/interest/AddExpertise";
 
 const routes = [
   // Authentication route
@@ -35,6 +36,7 @@ const routes = [
 
   //Interest Routes
   { path: "/select-interest", element: <SelectInterests /> },
+  { path: "/add-expertise", element: <AddExpertise /> },
 ];
 
 export { routes };
