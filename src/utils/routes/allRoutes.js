@@ -14,9 +14,11 @@ import App from "../../App";
 import SelectInterests from "../../views/interest/SelectInterest";
 import AddExpertise from "../../views/interest/AddExpertise";
 import RegistrationSuccess from "../../views/interest/RegistrationSuccessfull";
+import LandingPage from "../../views/LandingPage";
 
 const routes = [
   // Authentication route
+  { path: "/landing", element: <LandingPage /> },
   { path: "/sign-in", element: <SignIn /> },
   { path: "/sign-up", element: <SignUp /> },
   { path: "/verify-email", element: <VerifyEmail /> },
