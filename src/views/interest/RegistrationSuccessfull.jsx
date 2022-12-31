@@ -6,6 +6,7 @@ const RegistrationSuccess = () => {
   return (
     <>
       <InterestPageLayout
+        btnText="Sign in"
         className="relative h-[calc(100vh-73px)] flex items-center justify-center"
         cardClassName="flex items-center flex-col shadow-lg rounded-3xl border  w-[90%] sm:w-3/6 bg-white z-10  py-5  "
       >
