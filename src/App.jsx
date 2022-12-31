@@ -1,14 +1,6 @@
-
-// const App = () => {
-//   return (
-//     <div className="min-h-screen">
-      
-//     </div>
-//   )
-// }
-// =======
 import React from "react";
 import { Loader } from "./components/Loader";
+
 //manually delaying page component by 3000ms to test visibility of loader
 const TestPage = React.lazy(() =>
   Promise.all([

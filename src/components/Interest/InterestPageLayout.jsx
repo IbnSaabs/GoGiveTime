@@ -6,6 +6,7 @@ import Header from "./Header";
 import { Link } from "react-router-dom";
 
 const InterestPageLayout = ({
+  btnText,
   className,
   cardClassName,
   title,
@@ -15,7 +16,7 @@ const InterestPageLayout = ({
 }) => {
   return (
     <>
-      <Header />
+      <Header text={btnText} />
       <div className={className}>
         <img
           src={svg1}
