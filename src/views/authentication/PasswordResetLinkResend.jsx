@@ -1,18 +1,11 @@
+
 import React from "react";
-
 import { Link } from "react-router-dom";
-import { MdOutlineLocalPostOffice } from "react-icons/md";
 
-import { AuthCard, AuthPageLayout, SubmitButton } from "../../components/Auth";
+import { AuthCard, AuthPageLayout } from "../../components/Auth";
 import Logo from "../../assets/auth/auth-logo.svg";
 
-export const ForgotPassword = () => {
-    const [isHelperText, setIsHelperText] = React.useState(false);
-
-    const handleForgotPassword = () => {}
-    const handleInputChange = () => {
-        setIsHelperText(true)
-    }
+export const PasswordResetLinkResend= () => {
 
     return(
         <AuthPageLayout text='Sign in' path='/sign-in'>
