@@ -22,7 +22,7 @@ const routes = [
   { path: "/sign-up", element: <SignUp /> },
   { path: "/verify-email", element: <VerifyEmail /> },
   { path: "/forgot-password", element: <ForgotPassword /> },
-  { path: "/pasword-reset-link", element: <PasswordResetLinkResend /> },
+  { path: "/password-reset-link", element: <PasswordResetLinkResend /> }, // when password reset link has been sent to user email, it routes to this page 
   { path: "/password-reset", element: <PasswordReset /> },
   { path: "/location-setup", element: <LocationSetup /> },
   { path: "/enable-location", element: <EnableLocation /> },
