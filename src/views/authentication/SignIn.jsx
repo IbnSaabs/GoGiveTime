@@ -71,7 +71,7 @@ export const SignIn = () => {
 
                             {/* submit button */}
                             <SubmitButton
-                                className="mt-5 text-white bg-blue-400 hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-100 font-medium rounded-lg text-sm  w-full px-5 py-2.5 text-center"
+                                className="mt-5 text-white bg-blue-400 hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-100 font-medium rounded-lg text-sm  w-full px-5 py-2.5 text-center shadow-md"
                                 text="Sign In"
                                 type="button"
                                 handleSubmit={handleSignIn}
