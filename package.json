@@ -1,5 +1,5 @@
 {
-  "name": "GGT",
+  "name": "ggt",
   "private": true,
   "version": "0.0.0",
   "scripts": {
@@ -14,7 +14,7 @@
     "react-hooks-global-state": "^1.0.2",
     "react-icons": "^4.3.1",
     "react-router-dom": "6",
-    "react-scripts": "5.0.0",
+    "react-scripts": "^5.0.1",
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {

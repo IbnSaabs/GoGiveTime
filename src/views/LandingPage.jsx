@@ -1,10 +1,13 @@
 import React from 'react'
-import AboutUs from '../components/AboutUs'
-import Header from '../components/Header'
-import Hero from '../components/Hero'
-import Mission from '../components/Mission'
-import SignUp from '../components/SignUp'
-import Volunteering from '../components/Volunteering'
+import AboutUs from './landingPage/AboutUs'
+import Donate from './landingPage/Donate'
+import Employees from './landingPage/Employees'
+import Footer from './landingPage/Footer'
+import Header from './landingPage/Header'
+import Hero from './landingPage/Hero'
+import Mission from './landingPage/Mission'
+import SignUp from './landingPage/SignUp'
+import Volunteering from './landingPage/Volunteering'
 
 const LandingPage = () => {
   return (
@@ -15,6 +18,9 @@ const LandingPage = () => {
       <Volunteering/>
       <Mission/>
       <SignUp/>
+      <Employees/>
+      <Donate/>
+      <Footer/>
     </div>
   )
 }
