@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Student = () => {
   return (
-    <form>
-      <div className="grid gap-2  mb-6 px-2 lg:px-20 ">
+    <form onSubmit={(e) => e.preventDefault()}>
+      <div className="grid gap-2  mb-6 px-2 sm:px-10 lg:px-20 ">
         <div>
           <input
             type="text"
@@ -35,12 +36,16 @@ const Student = () => {
           <option value="4">400</option>
         </select>
 
-        <button
-          type="submit"
-          className="text-white w-4/5 sm:w-1/2 mt-5 border  bg-[#01B0F1] hover:bg-[#039ad1] focus:ring-4 focus:ring-blue-300 shadow-xl font-medium rounded-[10px] text-sm px-5 py-2.5 mx-auto mb-2 "
-        >
-          Submit
-        </button>
+        <div className="text-center mt-5">
+          <Link to={"/registration-successfull"}>
+            <button
+              type="submit"
+              className="text-white w-4/5 sm:w-1/2 border  bg-[#01B0F1] hover:bg-[#039ad1] focus:ring-4 focus:ring-blue-300 shadow-md font-medium rounded-[10px] text-sm px-5 py-2.5 mx-auto mb-2 "
+            >
+              Submit
+            </button>
+          </Link>
+        </div>
       </div>
     </form>
   );

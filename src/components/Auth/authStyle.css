@@ -1,0 +1,6 @@
+.auth-card{
+    overflow-y: scroll;
+}
+.auth-card::-webkit-scrollbar{
+    width: 4px;
+}

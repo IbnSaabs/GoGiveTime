@@ -19,6 +19,7 @@ import icon17 from "../../assets/interest/goals/sdg_icons_color_goal_17.svg";
 import heart from "../../assets/interest/heart.png";
 
 import InterestPageLayout from "../../components/Interest/InterestPageLayout";
+import { Link } from "react-router-dom";
 
 const interests = [
   {
@@ -109,11 +110,13 @@ const SelectInterests = () => {
 
   return (
     <InterestPageLayout
+      btnText="Sign in"
       className="relative h-[calc(100vh-73px)] flex items-center justify-center"
-      cardClassName="flex flex-col justify-center  shadow-lg rounded-3xl border max-h-[90%] w-5/6 sm:w-3/6 bg-white z-10 px-[22px] py-5"
+      cardClassName="flex flex-col justify-center  shadow-lg rounded-3xl border max-h-[90%] w-5/6 sm:w-4/6 lg:w-3/6 bg-white z-10 px-[22px] py-5"
       title="Select Your Interest"
       subTitle="Your feed will be personalized based on your interests. Don’t
               worry you can change it later."
+      linkTo="/sign-in"
     >
       {/* card header end  */}
       <div className="grid grid-cols-3 sm:grid-cols-4 gap-5  ">
@@ -147,12 +150,14 @@ const SelectInterests = () => {
       </div>
       {/* card action  */}
       <div className="my-8 text-center ">
-        <button
-          type="button"
-          className="text-white w-4/5 sm:w-1/2 mt-5 border  bg-[#01B0F1] hover:bg-[#039ad1] focus:ring-4 focus:ring-blue-300 shadow-xl font-medium rounded-[10px] text-sm px-5 py-2.5 mx-auto mb-2 "
-        >
-          Continue
-        </button>
+        <Link to={"/add-expertise"}>
+          <button
+            type="button"
+            className="text-white w-4/5 sm:w-1/2 mt-5 border  bg-[#01B0F1] hover:bg-[#039ad1] focus:ring-4 focus:ring-blue-300 shadow-md font-medium rounded-[10px] text-sm px-5 py-2.5 mx-auto mb-2 "
+          >
+            Continue
+          </button>
+        </Link>
       </div>
     </InterestPageLayout>
   );
