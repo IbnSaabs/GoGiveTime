@@ -22,39 +22,38 @@ export const SignUp = () => {
                     text='Sign up now'
                     googleAuth={true}                    
                     googleAuthText="Sign up with Google"
-                    appleAuthText="Sign up
-                 with Apple"
+                    appleAuthText="Sign up with Apple"
                 >
                     <form>
                         <div className="mt-5">
                             {/* name field */}
                             <div className="relative mb-6">
-                                <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none text-md text-gray-500 dark:text-gray-400">
+                                <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none text-md text-gray-500 ">
                                     <MdOutlinePersonOutline />
                                 </div>
                                 <input 
                                  type="text" 
                                  id="fullname"
                                  required
-                                 className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" 
+                                 className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  " 
                                  placeholder="Full name" />
                             </div>
                             {/* email field */}
                             <div className="relative mb-6">
-                                <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none text-md text-gray-500 dark:text-gray-400">
+                                <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none text-md text-gray-500 ">
                                     <MdOutlineLocalPostOffice />
                                 </div>
                                 <input 
                                  type="email" 
                                  id="email"
                                  required
-                                 className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" 
+                                 className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  " 
                                  placeholder="Your Email" />
                             </div>
 
                             {/* password field  */}
                             <div className="relative mb-6">
-                                <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none  text-md text-gray-500 dark:text-gray-400">
+                                <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none  text-md text-gray-500 ">
                                     <BsLock />
                                 </div>
                                 <input 
@@ -62,7 +61,7 @@ export const SignUp = () => {
                                   id="password"
                                   placeholder="Your password"
                                   required
-                                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" 
+                                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  " 
                                 />
                                 <div 
                                     onClick={() => setIsPasswordVisible(!isPasswordVisible)}
@@ -72,7 +71,7 @@ export const SignUp = () => {
                             </div>
                              {/* confirm password field  */}
                              <div className="relative mb-6">
-                                <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none  text-md text-gray-500 dark:text-gray-400">
+                                <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none  text-md text-gray-500 ">
                                     <BsLock />
                                 </div>
                                 <input 
@@ -80,7 +79,7 @@ export const SignUp = () => {
                                   id="confirm-password"
                                   placeholder="Confirm password"
                                   required
-                                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" 
+                                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5 " 
                                 />
                                 <div
                                     onClick={() => setIsConfirmPasswordVisible(!isConfirmPasswordVisible)}
@@ -94,7 +93,7 @@ export const SignUp = () => {
 
                             {/* submit button */}
                             <SubmitButton
-                                className="mt-7 text-white bg-blue-400 hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-100 font-medium rounded-lg text-sm  w-full px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                                className="mt-7 text-white bg-blue-400 hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-100 font-medium rounded-lg text-sm  w-full px-5 py-2.5 text-center"
                                 text="Sign Up"
                                 type="button"
                                 handleSubmit={handleSignUp}
