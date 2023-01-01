@@ -9,6 +9,8 @@ export const AuthCard = ({
     alt,
     text,
     googleAuth,
+    googleAuthText,
+    appleAuthText,
     children
 }) => {
     return(
@@ -23,14 +25,14 @@ export const AuthCard = ({
                             authLinkPath=""
                             authImgSrc={GoogleIcon}
                             authImgAlt="google auth"
-                            authText="Sign in with Google" />
+                            authText={googleAuthText} />
                         <OAuthButton
                             authLinkPath=""
                             authImgSrc={AppleIcon}
                             authImgAlt="apple auth"
-                            authText="Sign in with Apple" />
+                            authText={appleAuthText} />
                     </div>
-                    <p className="text-center mt-5">OR</p>
+                    <p className="text-center mt-5 text-gray-400 text-md">OR</p>
                 </> : null  //show lighter sub text
            }
             {/* forms, buttons and other dynamic contents */}

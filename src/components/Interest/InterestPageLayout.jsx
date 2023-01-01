@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 
 const InterestPageLayout = ({
   btnText,
+  btnPath,
   className,
   cardClassName,
   title,
@@ -16,7 +17,7 @@ const InterestPageLayout = ({
 }) => {
   return (
     <>
-      <Header text={btnText} />
+      <Header text={btnText} path={btnPath} />
       <div className={className}>
         <img
           src={svg1}
