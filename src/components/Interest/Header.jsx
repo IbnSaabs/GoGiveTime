@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 const Header = ({text, path}) => {
   return (
     <header className="border-b h-[73px] shadow-sm flex items-center ">
+    {text === '' && path === '' ? null :
       <div className=" w-full flex justify-end mx-10">
         <Link
           to={path}
@@ -13,6 +14,7 @@ const Header = ({text, path}) => {
           {text}
         </Link>
       </div>
+    }
     </header>
   );
 };
