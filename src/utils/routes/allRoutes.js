@@ -1,10 +1,9 @@
 import {
-  ConfirmPasswordReset,
-  ConfirmPasswordUpdated,
   EnableLocation,
   ForgotPassword,
   LocationSetup,
   PasswordReset,
+  PasswordResetLinkResend,
   SignIn,
   SignUp,
   VerifyEmail,
@@ -23,16 +22,10 @@ const routes = [
   { path: "/sign-up", element: <SignUp /> },
   { path: "/verify-email", element: <VerifyEmail /> },
   { path: "/forgot-password", element: <ForgotPassword /> },
-  { path: "/pasword-reset-confirmation", element: <ConfirmPasswordReset /> },
+  { path: "/pasword-reset-link", element: <PasswordResetLinkResend /> },
   { path: "/password-reset", element: <PasswordReset /> },
-  {
-    path: "/password-update-confirmation",
-    element: <ConfirmPasswordUpdated />,
-  },
   { path: "/location-setup", element: <LocationSetup /> },
   { path: "/enable-location", element: <EnableLocation /> },
-
-  //include other routes and a descriptive comment here
 
   //test route for preloader
   { path: "/", element: <App /> },
