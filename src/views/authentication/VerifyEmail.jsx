@@ -14,7 +14,7 @@ export const VerifyEmail = () => {
     const handleEmailVerification = () => {}
 
     return(
-        <AuthPageLayout text='' path=''>
+        <AuthPageLayout text='Sign in' path='/sign-in'>
                 <AuthCard
                     src={Logo}
                     alt='GGT Logo'
