@@ -11,7 +11,8 @@ export const AuthCard = ({
     googleAuth,
     googleAuthText,
     appleAuthText,
-    children
+    children,
+    subText
 }) => {
     return(
         <div className='auth-card absolute top-10 px-16 md:px-32 pt-10 pb-40 object-center rounded-3xl border max-h-[90%] max-w-[700px] min-w-[350px] bg-white z-10'>
@@ -20,7 +21,7 @@ export const AuthCard = ({
             {
                 googleAuth ?
                 <>
-                    <div className="grid mt-4  md:flex justify-between">
+                    <div className="grid mt-4 justify-center md:flex md:justify-between ">
                         <OAuthButton
                             authLinkPath=""
                             authImgSrc={GoogleIcon}
@@ -33,7 +34,7 @@ export const AuthCard = ({
                             authText={appleAuthText} />
                     </div>
                     <p className="text-center mt-5 text-gray-400 text-md">OR</p>
-                </> : null  //show lighter sub text
+                </> : <p className="mt-5 text-center text-md text-gray-400">{subText}</p>
            }
             {/* forms, buttons and other dynamic contents */}
             <div>{children}</div>
