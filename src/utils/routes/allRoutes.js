@@ -4,6 +4,7 @@ import {
   LocationSetup,
   PasswordReset,
   PasswordResetLinkResend,
+  PasswordUpdated,
   SignIn,
   SignUp,
   VerifyEmail,
@@ -24,6 +25,7 @@ const routes = [
   { path: "/forgot-password", element: <ForgotPassword /> },
   { path: "/password-reset-link", element: <PasswordResetLinkResend /> }, // when password reset link has been sent to user email, it routes to this page 
   { path: "/password-reset", element: <PasswordReset /> },
+  { path: "/password-updated", element: <PasswordUpdated /> },
   { path: "/location-setup", element: <LocationSetup /> },
   { path: "/enable-location", element: <EnableLocation /> },
 
