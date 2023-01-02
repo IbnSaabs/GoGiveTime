@@ -20,11 +20,11 @@ const Carousel = ({ employess }) => {
   return (
     <div className=" relative">
       <HiOutlineArrowNarrowLeft
-        className="left absolute w-5 h-6 sm:w-10 sm:h-8 left-0 lg:left-7 top-1/2 z-20  bg-[#01B0F1]"
+        className="left absolute w-5 h-6 sm:w-10 sm:h-8 left-0 lg:left-7 top-1/2 translate-y-[-50%] z-20  bg-[#01B0F1]"
         color="#fff"
       />
       <HiOutlineArrowNarrowRight
-        className="right absolute w-5 h-6 sm:w-10 sm:h-8 right-0 lg:right-7 top-1/2 z-20 bg-[#01B0F1]"
+        className="right absolute w-5 h-6 sm:w-10 sm:h-8 right-0 lg:right-7 top-1/2 translate-y-[-50%] z-20 bg-[#01B0F1]"
         color="#fff"
       />
       <Swiper
@@ -45,7 +45,7 @@ const Carousel = ({ employess }) => {
                 <img
                   src={employer.img}
                   alt={`image of ${employer.name}`}
-                  className="h-[220] object-contain sm:h-[400px] border mx-auto "
+                  className=" object-contain sm:h-[400px] mx-auto "
                 />
               </div>
               <div className="flex flex-col items-center justify-center sm:gap-5 col-span-2 pr-6">
