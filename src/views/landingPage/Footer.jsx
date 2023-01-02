@@ -12,45 +12,45 @@ import linkedin from "../../assets/Landing_Page_Images/linkedin.svg";
 const Footer = () => {
   return (
     <div >
-      <div className="flex justify-between items-center w-full h-[279px] pr-10">
-        <div className="w-[320.88px] h-[161px] top-[36px] ml-[50px] space-y-4">
-          <div className="flex items-center w-[320.88px] h-[100px] top-[36px] left-[78px] gap-[10px]">
-            <img src={logo} alt="" className="w-[80.88px] h-[100px]" />
-            <p className="w-[230px] h-[47px] top-[26.5px] left-[90.88px] font-bold text-[36px] leading-[46.87px] tracking-[2%]">
+      <div className="sm:flex sm:justify-between sm:items-center w-ful sm:h-[279px] sm:pr-10  p-4 sm:p-0 space-y-6 sm:space-y-0">
+        <div className="flex flex-col items-center sm:block sm:w-[320.88px] sm:h-[161px] top-[36px] sm:ml-[50px] space-y-4">
+          <div className="flex items-center w-[150.44px] sm:w-[320.88px] h-[50px] sm:h-[100px] top-[30px] sm:top-[36px] left-[78px] gap-[10px]">
+            <img src={logo} alt="" className="w-[40.44px] sm:w-[80.88px] h-[50px] sm:h-[100px]" />
+            <p className="w-[230px] h-[47px] top-[26.5px] left-[90.88px] font-bold text-[15px] sm:text-[36px] leading-[46.87px] tracking-[2%]">
               GoGive Time
             </p>
           </div>
-          <div className="flex w-[296px] h-[41px] top-[156px] left-[86px] gap-5">
+          <div className="flex w-[296px] h-[41px] top-[156px] left-[86px] gap-5 ">
             <img src={apple} alt="" className="" />
             <img src={google} alt="" className="" />
           </div>
         </div>
-        <div className="flex justify-between w-[413px] h-[156px] top-[50px] left-[516px]">
-          <div className="w-[130px] h-[156px] top-[50px] left-[516px] space-y-4 font-semibold text-[16px] text-[#0E0F1D]">
+        <div className="flex justify-between sm:w-[413px] sm:h-[156px] top-[171px] sm:top-[50px] left-[18px] sm:left-[516px] ">
+          <div className="w-[130px] h-[156px] top-[50px] left-[516px] space-y-4 font-semibold text-[16px] text-[#0E0F1D] ">
             <p>Beneficiary</p>
             <p>How It Works</p>
             <p>Volunteer Stories</p>
             <p>Leaderboard</p>
           </div>
-          <div className="w-[138px] h-[156px] top-[50px] left-[676px] space-y-4 font-semibold text-[16px] text-[#0E0F1D]">
+          <div className="w-[138px] h-[156px] top-[50px] left-[676px] space-y-4 font-semibold text-[16px] text-[#0E0F1D] ">
             <p>About Us</p>
             <p>Partner With Us</p>
             <p>Support Us</p>
             <p>Jobs & Internships</p>
           </div>
-          <div className="w-[86px] h-[156px] top-[50px] left-[843px] space-y-4 font-semibold text-[16px] text-[#0E0F1D]">
+          <div className="w-[86px] h-[156px] top-[50px] left-[843px] space-y-4 font-semibold text-[16px] text-[#0E0F1D] ">
             <p>FAQ</p>
             <p>Policies</p>
             <p>Contact Us</p>
             <p>Knowledge</p>
           </div>
         </div>
-        <div className="w-[372px] h-[151px] top-[50px] left-[1032px] gap-[19px]">
-          <div className="w-[372px] h-[96px] rounded-[5px]">
-            <p className="font-medium text-[14px] leading-[18.23px] text-[#0E0F1D]">
+        <div className="sm:w-[372px] h-[151px] top-[50px] sm:left-[1032px] gap-[19px] ">
+          <div className="sm:w-[372px] h-[96px] rounded-[5px]   space-y-4">
+            <p className="font-medium text-[14px] leading-[18.23px] text-[#0E0F1D] ">
               Subscribe to our newsletter to get updates on our latest stories!
             </p>
-            <div class="flex justify-between w-[372px] h-[46px] top-[50px] rounded-[5px] bg-[#F5F5F5] overflow-hidden my-4">
+            <div class="flex justify-between sm:w-[372px] h-[46px] top-[50px] rounded-[5px] bg-[#F5F5F5] overflow-hidden my-4">
               <input
                 type="email"
                 id="typeEmail"
@@ -61,7 +61,7 @@ const Footer = () => {
                 Subscribe
               </button>
             </div>
-            <div className="flex justify-center h-[36px] top-[115px] left-[111px] gap-[10px]">
+            <div className="flex justify-center h-[36px] top-[115px] left-[111px] gap-[10px] ">
               <div className="w-[68px] h-[36px] rounded-[5px] p-[10px] text-[#01B0F1] border border-[#01B0F1]">
                 <p className="font-medium text-[12px] leading-[15.62px]">
                   Male
@@ -76,15 +76,15 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="w-full h-[86px] top-[279px] bg-black flex justify-between items-center pr-10">
-        <p className="text-[white] font-medium text-[16px] ml-[50px]">© 2023 GoGive Time All Rights Reserved </p>
-        <div className="w-[219px] h-[24px] flex justify-between">
-            <img src={instagram} alt="" className="w-[24px] h-[24px]" />
-            <img src={facebook} alt="" className="w-[24px] h-[24px]" />
-            <img src={twitter} alt="" className="w-[24px] h-[24px]" />
-            <img src={linkedin} alt="" className="w-[24px] h-[24px]" />
-            <img src={youtube} alt="" className="w-[24px] h-[24px]" />
-            <img src={tictok} alt="" className="w-[24px] h-[24px]" />
+      <div className="w-full h-[134px] sm:h-[86px] sm:top-[279px] bg-black flex flex-col-reverse sm:flex-row sm:justify-between justify-center sm:items-center sm:pr-10 ">
+        <p className="text-[white] font-medium text-[16px] sm:ml-[50px] ">© 2023 GoGive Time All Rights Reserved </p>
+        <div className="w-[219px] h-[24px] flex justify-between  mb-6 sm:mb-0 ">
+            <img src={instagram} alt="" className="w-[16.01px] sm:w-[24px] h-[15.76px] sm:h-[24px]" />
+            <img src={facebook} alt="" className="w-[16.01px] sm:w-[24px] h-[15.76px] sm:h-[24px]" />
+            <img src={twitter} alt="" className="w-[16.01px] sm:w-[24px] h-[15.76px] sm:h-[24px]" />
+            <img src={linkedin} alt="" className="w-[16.01px] sm:w-[24px] h-[15.76px] sm:h-[24px]" />
+            <img src={youtube} alt="" className="w-[16.01px] sm:w-[24px] h-[15.76px] sm:h-[24px]" />
+            <img src={tictok} alt="" className="w-[16.01px] sm:w-[24px] h-[15.76px] sm:h-[24px]" />
         </div>
       </div>
     </div>
