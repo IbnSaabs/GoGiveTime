@@ -2,7 +2,7 @@ import React from "react";
 
 const Mission = () => {
   return (
-    <div className="w-[1440px] h-[893px] top-[2862px] left-0 ">
+    <div className="w-[1440px] h-[893px] top-[2862px] left-0 hidden sm:block">
       <div className="w-[679px] h-[296px] top-[3297px] left-[81px] gap-[40px] flex flex-col items-center p-0 absolute">
         <div className="w-[679px] h-[200px]  gap-[20px] flex flex-col items-center p-0">
           <p className="font-bold text-[36px] leading-[50px] text-[#252A34] capitalize">
