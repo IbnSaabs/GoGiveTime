@@ -18,9 +18,9 @@ body {
 
 
 .hero {
-height: 150vh;
 background-image: url('/src/assets/Landing_Page_Images/Frame\ 1.svg');
-background-position: top;
+/* background-position: top; */
+/* background-position: bottom; */
 background-size: cover;
 background-repeat: no-repeat;
 }

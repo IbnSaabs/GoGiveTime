@@ -11,12 +11,13 @@ const TestPage = React.lazy(() =>
 
 const App = () => {
   return (
-    //implemented a general loader
-    <React.Suspense fallback={<Loader />}>
-      <TestPage />
-    </React.Suspense>
+    <div>
+      {/* implemented a general loader */}
+      <React.Suspense fallback={<Loader />}>
+        <TestPage />
+      </React.Suspense>
+    </div>
   );
 };
-
 
 export default App;
