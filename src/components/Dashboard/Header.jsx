@@ -80,7 +80,7 @@ const Header = () => {
                 <Link to={item.to}>
                   <button
                     type="button"
-                    class={`${
+                    className={`${
                       pathname === item.to && "bg-[#01B0F1] text-white"
                     }  hover:bg-[#01B0F1] hover:text-white focus:ring-4 focus:outline-none focus:ring-[#01b1f1bd] font-semibold text-md rounded-md  px-7 py-3 text-center  md:mr-0 `}
                   >

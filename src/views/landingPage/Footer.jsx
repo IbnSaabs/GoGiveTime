@@ -54,7 +54,7 @@ const Footer = () => {
             <p className="font-medium text-[14px] leading-[18.23px] text-[#0E0F1D] ">
               Subscribe to our newsletter to get updates on our latest stories!
             </p>
-            <div class="flex justify-between sm:w-[372px] h-[46px] top-[50px] rounded-[5px] bg-[#F5F5F5] overflow-hidden my-4">
+            <div className="flex justify-between sm:w-[372px] h-[46px] top-[50px] rounded-[5px] bg-[#F5F5F5] overflow-hidden my-4">
               <input
                 type="email"
                 id="typeEmail"
