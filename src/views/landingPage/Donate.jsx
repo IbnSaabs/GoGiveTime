@@ -7,21 +7,21 @@ import airtel from "../../assets/Landing_Page_Images/airtel.svg";
 
 const Donate = () => {
   return (
-    <div className="flex justify-center h-[96px] sm:h-[233px] sm:top-[4452px] border border-[#EC3138]">
-      <div className="flex flex-col items-center w-[365px] sm:w-[1063.65px] h-[45px] sm:h-[214px] top-[46px] sm:top-[2px] gap-[20px] sm:gap-[52px] text-center">
+    <div className="flex justify-center w-full h-[96px] sm:h-[180px] md:h-[233px] border border-[#EC3138]">
+      <div className="flex flex-col items-center w-[345px] sm:w-[500px] md:w-[1063.65px] h-[45px] sm:h-[150px] md:h-[214px] top-[46px] sm:top-[2px] gap-[20px] md:gap-[52px] text-center">
         <h1 className="h-[26px] sm:h-[62px] font-bold text-[20px] sm:text-[48px] sm:leading-[62.5px]">Donate</h1>
-        <div className="flex justify-between w-[365.46px] sm:w-[1063.65px] h-[50px] sm:h-[100px] top-[46px] sm:top-[114px] gap-[20px] sm:gap-[100px]">
-          <div className=" w-[50px] sm:w-[100px] h-[50px] sm:h-[100px] pt-[15px] sm:pt-[35px]">
+        <div className="flex justify-between w-[345.46px] sm:w-[500px] md:w-[1063.65px] h-[50px] sm:h-[100px] top-[46px] sm:top-[114px]">
+          <div className=" w-[50px] md:w-[100px] h-[50px] md:h-[100px] pt-[15px] md:pt-[35px]">
             <img
               src={visa}
               alt=""
-              className="w-[45.68px] sm:w-[91.36px] h-[15px] sm:h-[30px] top-[19.27px] sm:top-[38.54px] left-[7.81px] sm:left-[15.63px]"
+              className="w-[45.68px] sm:w-[91.36px] h-[15px] md:h-[30px] top-[19.27px] sm:top-[38.54px] left-[7.81px] sm:left-[15.63px]"
             />
           </div>
-          <img src={mastercard} alt="" className="w-[54.5px] sm:w-[136.25px] h-[40px] sm:h-[100px] left-[70px] sm:left-[200px]" />
-          <img src={vodafone} alt="" className="w-[71.11px] sm:w-[177.78px] h-[40px] sm:h-[100px] left-[144.5px] sm:left-[436.25px]" />
-          <img src={mtn} alt="" className="w-[59.85px] sm:w-[149.62px] h-[40px] sm:h-[100px] left-[235.61px] sm:left-[714.03px]" />
-          <img src={airtel} alt="" className="w-[50px] sm:w-[100px] h-[50px] sm:h-[100px] left-[315.46px] sm:left-[963.65px]" />
+          <img src={mastercard} alt="" className="w-[54.5px] md:w-[136.25px] h-[40px] md:h-[100px] left-[70px] sm:left-[200px]"/>
+          <img src={vodafone} alt="" className="w-[71.11px] md:w-[177.78px] h-[40px] md:h-[100px] left-[144.5px] sm:left-[436.25px]"/>
+          <img src={mtn} alt="" className="w-[59.85px] md:w-[149.62px] h-[40px] md:h-[100px] left-[235.61px] sm:left-[714.03px]"/>
+          <img src={airtel} alt="" className="w-[50px] md:w-[100px] h-[50px] md:h-[100px] left-[315.46px] sm:left-[963.65px]"/>
         </div>
       </div>
     </div>
