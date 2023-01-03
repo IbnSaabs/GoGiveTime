@@ -11,11 +11,15 @@ import linkedin from "../../assets/Landing_Page_Images/linkedin.svg";
 
 const Footer = () => {
   return (
-    <div >
+    <div>
       <div className="md:flex md:justify-between md:items-center w-full md:h-[279px] md:pr-10  p-4 md:p-0 space-y-6 md:space-y-0">
         <div className="flex flex-col items-center md:block md:w-[320.88px] sm:h-[161px] top-[36px] md:ml-[50px] space-y-4">
           <div className="flex items-center w-[150.44px] sm:w-[320.88px] h-[50px] sm:h-[100px] gap-[10px]">
-            <img src={logo} alt="" className="w-[40.44px] sm:w-[80.88px] h-[50px] sm:h-[100px]" />
+            <img
+              src={logo}
+              alt=""
+              className="w-[40.44px] sm:w-[80.88px] h-[50px] sm:h-[100px]"
+            />
             <p className="w-[230px] left-[90.88px] font-bold text-[15px] sm:text-[36px] leading-[46.87px] tracking-[2%]">
               GoGive Time
             </p>
@@ -50,11 +54,11 @@ const Footer = () => {
             <p className="font-medium text-[14px] leading-[18.23px] text-[#0E0F1D] ">
               Subscribe to our newsletter to get updates on our latest stories!
             </p>
-            <div class="flex justify-between sm:w-[372px] h-[46px] top-[50px] rounded-[5px] bg-[#F5F5F5] overflow-hidden my-4">
+            <div className="flex justify-between sm:w-[372px] h-[46px] top-[50px] rounded-[5px] bg-[#F5F5F5] overflow-hidden my-4">
               <input
                 type="email"
                 id="typeEmail"
-                class="border-none outline-none bg-transparent"
+                className="border-none outline-none bg-transparent"
                 placeholder="Your email"
               />
               <button className="w-[120px] px-[12px] left-[255px] gap-[10px] bg-black text-white font-light text-[16px] leading-[24px]">
@@ -77,14 +81,40 @@ const Footer = () => {
         </div>
       </div>
       <div className="w-full h-[134px] sm:h-[86px] sm:top-[279px] bg-black flex flex-col-reverse sm:flex-row sm:justify-between justify-center items-center sm:pr-10 ">
-        <p className="text-[white] font-medium text-[16px] sm:ml-[50px] ">© 2023 GoGive Time All Rights Reserved </p>
+        <p className="text-[white] font-medium text-[16px] sm:ml-[50px] ">
+          © 2023 GoGive Time All Rights Reserved{" "}
+        </p>
         <div className="w-[219px] h-[24px] flex justify-between  mb-6 sm:mb-0 ">
-            <img src={instagram} alt="" className="w-[16.01px] sm:w-[24px] h-[15.76px] sm:h-[24px]" />
-            <img src={facebook} alt="" className="w-[16.01px] sm:w-[24px] h-[15.76px] sm:h-[24px]" />
-            <img src={twitter} alt="" className="w-[16.01px] sm:w-[24px] h-[15.76px] sm:h-[24px]" />
-            <img src={linkedin} alt="" className="w-[16.01px] sm:w-[24px] h-[15.76px] sm:h-[24px]" />
-            <img src={youtube} alt="" className="w-[16.01px] sm:w-[24px] h-[15.76px] sm:h-[24px]" />
-            <img src={tictok} alt="" className="w-[16.01px] sm:w-[24px] h-[15.76px] sm:h-[24px]" />
+          <img
+            src={instagram}
+            alt=""
+            className="w-[16.01px] sm:w-[24px] h-[15.76px] sm:h-[24px]"
+          />
+          <img
+            src={facebook}
+            alt=""
+            className="w-[16.01px] sm:w-[24px] h-[15.76px] sm:h-[24px]"
+          />
+          <img
+            src={twitter}
+            alt=""
+            className="w-[16.01px] sm:w-[24px] h-[15.76px] sm:h-[24px]"
+          />
+          <img
+            src={linkedin}
+            alt=""
+            className="w-[16.01px] sm:w-[24px] h-[15.76px] sm:h-[24px]"
+          />
+          <img
+            src={youtube}
+            alt=""
+            className="w-[16.01px] sm:w-[24px] h-[15.76px] sm:h-[24px]"
+          />
+          <img
+            src={tictok}
+            alt=""
+            className="w-[16.01px] sm:w-[24px] h-[15.76px] sm:h-[24px]"
+          />
         </div>
       </div>
     </div>
