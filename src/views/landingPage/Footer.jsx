@@ -11,11 +11,15 @@ import linkedin from "../../assets/Landing_Page_Images/linkedin.svg";
 
 const Footer = () => {
   return (
-    <div >
+    <div>
       <div className="sm:flex sm:justify-between sm:items-center w-ful sm:h-[279px] sm:pr-10  p-4 sm:p-0 space-y-6 sm:space-y-0">
         <div className="flex flex-col items-center sm:block sm:w-[320.88px] sm:h-[161px] top-[36px] sm:ml-[50px] space-y-4">
           <div className="flex items-center w-[150.44px] sm:w-[320.88px] h-[50px] sm:h-[100px] top-[30px] sm:top-[36px] left-[78px] gap-[10px]">
-            <img src={logo} alt="" className="w-[40.44px] sm:w-[80.88px] h-[50px] sm:h-[100px]" />
+            <img
+              src={logo}
+              alt=""
+              className="w-[40.44px] sm:w-[80.88px] h-[50px] sm:h-[100px]"
+            />
             <p className="w-[230px] h-[47px] top-[26.5px] left-[90.88px] font-bold text-[15px] sm:text-[36px] leading-[46.87px] tracking-[2%]">
               GoGive Time
             </p>
@@ -54,7 +58,7 @@ const Footer = () => {
               <input
                 type="email"
                 id="typeEmail"
-                class="border-none outline-none bg-transparent"
+                className="border-none outline-none bg-transparent"
                 placeholder="Your email"
               />
               <button className="w-[120px] px-[12px] left-[255px] gap-[10px] bg-black text-white font-light text-[16px] leading-[24px]">
@@ -77,14 +81,40 @@ const Footer = () => {
         </div>
       </div>
       <div className="w-full h-[134px] sm:h-[86px] sm:top-[279px] bg-black flex flex-col-reverse sm:flex-row sm:justify-between justify-center sm:items-center sm:pr-10 ">
-        <p className="text-[white] font-medium text-[16px] sm:ml-[50px] ">© 2023 GoGive Time All Rights Reserved </p>
+        <p className="text-[white] font-medium text-[16px] sm:ml-[50px] ">
+          © 2023 GoGive Time All Rights Reserved{" "}
+        </p>
         <div className="w-[219px] h-[24px] flex justify-between  mb-6 sm:mb-0 ">
-            <img src={instagram} alt="" className="w-[16.01px] sm:w-[24px] h-[15.76px] sm:h-[24px]" />
-            <img src={facebook} alt="" className="w-[16.01px] sm:w-[24px] h-[15.76px] sm:h-[24px]" />
-            <img src={twitter} alt="" className="w-[16.01px] sm:w-[24px] h-[15.76px] sm:h-[24px]" />
-            <img src={linkedin} alt="" className="w-[16.01px] sm:w-[24px] h-[15.76px] sm:h-[24px]" />
-            <img src={youtube} alt="" className="w-[16.01px] sm:w-[24px] h-[15.76px] sm:h-[24px]" />
-            <img src={tictok} alt="" className="w-[16.01px] sm:w-[24px] h-[15.76px] sm:h-[24px]" />
+          <img
+            src={instagram}
+            alt=""
+            className="w-[16.01px] sm:w-[24px] h-[15.76px] sm:h-[24px]"
+          />
+          <img
+            src={facebook}
+            alt=""
+            className="w-[16.01px] sm:w-[24px] h-[15.76px] sm:h-[24px]"
+          />
+          <img
+            src={twitter}
+            alt=""
+            className="w-[16.01px] sm:w-[24px] h-[15.76px] sm:h-[24px]"
+          />
+          <img
+            src={linkedin}
+            alt=""
+            className="w-[16.01px] sm:w-[24px] h-[15.76px] sm:h-[24px]"
+          />
+          <img
+            src={youtube}
+            alt=""
+            className="w-[16.01px] sm:w-[24px] h-[15.76px] sm:h-[24px]"
+          />
+          <img
+            src={tictok}
+            alt=""
+            className="w-[16.01px] sm:w-[24px] h-[15.76px] sm:h-[24px]"
+          />
         </div>
       </div>
     </div>
