@@ -1,20 +1,25 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Mission = () => {
   return (
-    <div className="w-[1440px] h-[893px] top-[2862px] left-0 hidden sm:block">
-      <div className="w-[679px] h-[296px] top-[3297px] left-[81px] gap-[40px] flex flex-col items-center p-0 absolute">
+    <div className="broder w-full h-[893px] hidden md:block">
+      <div className="w-[679px] h-[296px] top-[3127px] left-[81px] gap-[40px] flex flex-col items-center p-0 absolute">
         <div className="w-[679px] h-[200px]  gap-[20px] flex flex-col items-center p-0">
           <p className="font-bold text-[36px] leading-[50px] text-[#252A34] capitalize">
-            It is our mission at <span className="text-[#01B0F1]">GoGive Time</span>  to help you develop your leadership
-            skill through community transformation efforts
+            It is our mission at{" "}
+            <span className="text-[#01B0F1]">GoGive Time</span> to help you
+            develop your leadership skill through community transformation
+            efforts
           </p>
         </div>
-        <button className="py-4 px-10 bg-[#EE364F] text-[#FFFFFF] font-bold rounded-[10px] flex ">
-          Sign Up
-        </button>
+        <Link to={"/sign-up"}>
+          <button className="border-[2px] border-[#EE364F] text-white bg-[#EE364F] text-[12px] sm:text-[20px] font-bold rounded-[2px] sm:rounded-[10px] w-[65px] sm:w-[100px] md:w-[145px] sm:h-[45px] md:h-[56px]">
+            Sign Up
+          </button>
+        </Link>
       </div>
-      <div className="w-[700px] h-[643px] top-[2950px] ml-[500px] absolute mission"></div>
+      <div className="w-[700px] h-[643px] top-[2800px] ml-[500px] absolute mission"></div>
     </div>
   );
 };
