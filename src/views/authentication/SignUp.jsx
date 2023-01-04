@@ -14,7 +14,6 @@ export const SignUp = () => {
     const handleSignUp = () => {}
 
     return(
-        <div>
             <AuthPageLayout text='Sign in' path='/sign-in'>
                 <AuthCard
                     src={Logo}
@@ -89,7 +88,7 @@ export const SignUp = () => {
                             </div>
 
                             {/* remember me and forgot password  */}
-                            <p className="text-gray-400 text-center text-xs">By creating an account, you agree to the <a href='#' className="underline">Terms of use</a> and <a href='#' className="underline">Privacy Policy.</a> </p>
+                            <p className="text-gray-400 text-center text-xs w-8/12 sm:w-10/12 mx-auto">By creating an account, you agree to the <a href='#' className="underline">Terms of use</a> and <a href='#' className="underline">Privacy Policy.</a> </p>
 
                             {/* submit button */}
                             <SubmitButton
@@ -104,6 +103,5 @@ export const SignUp = () => {
                     </form>
                 </AuthCard>
             </AuthPageLayout>
-        </div>
     ) 
 }
