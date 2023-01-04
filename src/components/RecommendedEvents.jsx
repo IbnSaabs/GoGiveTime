@@ -1,15 +1,12 @@
 import React from "react";
-import { Layout } from "../../../components/Dashboard";
 import { useGlobalState } from "../utils/store";
 import { TfiMoreAlt } from "react-icons/tfi";
 import pin from "../assets/Landing_Page_Images/sidebar/map-pin.svg"
 
-
-const Events = () => {
+const RecommendedEvents = () => {
   const [events] = useGlobalState("events");
   return (
-    <Layout>
-      <div className="w-[308px]  text-center">
+    <div className="w-[308px]  text-center">
       <div className="border-b [#F5F5F5] p-4 flex justify-between items-center">
         <h1 className="text-[#6C6C6C] text-[16px] font-medium ">
           Recommended Events
@@ -21,7 +18,6 @@ const Events = () => {
       ))}
       <p className="text-[14px] text-[#20A6FC]">see all</p>
     </div>
-    </Layout>
   );
 };
 
@@ -57,5 +53,4 @@ const Event = ({ event }) => {
   );
 };
 
-
-export default Events;
+export default RecommendedEvents;
