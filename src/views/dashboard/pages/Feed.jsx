@@ -1,12 +1,13 @@
 import React from "react";
-import Layout from "../../../components/Dashboard/Layout";
+import {Layout, AddPost} from "../../../components/Dashboard";
 import post from "../../../assets/Content.png";
 
 const Feed = () => {
   return (
     <Layout>
       {/* replace below image with addPost,Photo post frame */}
-      <img src={post} className="w-full" alt="" />
+      <AddPost />
+      {/* <img src={post} className="w-full" alt="" /> */}
     </Layout>
   );
 };

@@ -3,7 +3,7 @@ import Header from "./Header";
 import Footer from "../../views/landingPage/Footer";
 import SideBar from "./SideBar";
 
-const Layout = ({ children }) => {
+export const Layout = ({ children }) => {
   return (
     <div className="bg-[#EDF1F5]">
       {/* header  */}
@@ -24,4 +24,4 @@ const Layout = ({ children }) => {
   );
 };
 
-export default Layout;
+// export default Layout;

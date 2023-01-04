@@ -1,8 +1,9 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import Logo from "./Logo";
 import { HiMenu } from "react-icons/hi";
 import { IoIosClose } from "react-icons/io";
+
+import Logo from "./Logo";
 
 // menu items
 const NavItems = [
