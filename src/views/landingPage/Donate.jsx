@@ -7,7 +7,7 @@ import airtel from "../../assets/Landing_Page_Images/airtel.svg";
 
 const Donate = () => {
   return (
-    <div className="flex justify-center w-full h-[96px] sm:h-[180px] md:h-[233px] border border-[#EC3138]">
+    <div className="flex justify-center w-full h-[96px] sm:h-[180px] md:h-[233px] border-y border-[#EC3138]">
       <div className="flex flex-col items-center w-[345px] sm:w-[500px] md:w-[1063.65px] h-[45px] sm:h-[150px] md:h-[214px] top-[46px] sm:top-[2px] gap-[20px] md:gap-[52px] text-center">
         <h1 className="h-[26px] sm:h-[62px] font-bold text-[20px] sm:text-[48px] sm:leading-[62.5px]">Donate</h1>
         <div className="flex justify-between w-[345.46px] sm:w-[500px] md:w-[1063.65px] h-[50px] sm:h-[100px] top-[46px] sm:top-[114px]">

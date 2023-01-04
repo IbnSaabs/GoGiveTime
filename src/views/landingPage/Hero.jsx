@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="mt-20 sm:mt-28 md:mt-36 h-[175px] sm:h-[352px] w-[300px] sm:w-[500px] md:w-[637px] sm:ml-[50px] md:ml-[100px] text-center">
         <h1 className="font-bold text-[20px] sm:text-[40px] md:text-[64px] leading-[21.47px] sm:leading-[40px] md:leading-[68.7px] text-[#01B0F1]">
           You
-          <span className="text-[#EC3138]"> Volunteer,</span>
+          <span className="text-[#EC3138]"> Volunteer, </span>
           You <br />
           <span className="text-[#EC3138]"> Grow </span>
           and you

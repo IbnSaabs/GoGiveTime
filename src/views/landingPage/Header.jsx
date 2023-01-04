@@ -4,7 +4,7 @@ import logo from "../../assets/Landing_Page_Images/GoGive_Time 3 (1).svg";
 
 const Header = () => {
   return (
-    <header className="w-full left-0 right-0 top-0 bottom-[97.39%] h-[70px] sm:h-[100px] md:h-[131.95px] box-border overflow-hidden z-50 bg-white py-2 px-2 sm:px-4 border-b border-[#666666]">
+    <header className="w-full left-0 right-0 top-0 bottom-[97.39%] box-border overflow-hidden z-50 bg-white py-2 px-2 sm:px-4 border-b border-[#666666]">
       <div className="flex justify-between items-center h-full sm:ml-4 md:mr-8 mx-2">
         <div className="flex items-center gap-[5px] sm:gap-[10px] h-[50px] md:h-[100px] w-[141.44px] sm:w-[345px] top-[15px] left-[20px]">
           <img
