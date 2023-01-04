@@ -15,6 +15,8 @@ import SelectInterests from "../../views/interest/SelectInterest";
 import AddExpertise from "../../views/interest/AddExpertise";
 import RegistrationSuccess from "../../views/interest/RegistrationSuccessfull";
 import LandingPage from "../../views/LandingPage";
+import Sidebar from "../../components/Sidebar";
+import RecommendedEvents from "../../components/RecommendedEvents";
 
 const routes = [
   // Authentication route
@@ -36,6 +38,10 @@ const routes = [
   { path: "/select-interest", element: <SelectInterests /> },
   { path: "/add-expertise", element: <AddExpertise /> },
   { path: "/registration-successfull", element: <RegistrationSuccess /> },
+
+  //route for ssidebar so i can see what i am coding
+  { path: "/sidebar", element: <Sidebar /> },
+  { path: "/events", element: <RecommendedEvents/> },
 ];
 
 export { routes };

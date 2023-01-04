@@ -13,7 +13,7 @@ const Hero = () => {
           and you
           <span className="text-[#EC3138]"> Lead<span className=" text-to-b from-[#01B0F1] to-[#EC3138]">!</span></span>
         </h1>
-        <p className="text-center top-[202px] sm:top-[462px] h-[36px] sm:h-[84px] w-[300px] sm:w-[500px] md:w-[637px] left-[109px] sm:left-[447px] font-[300px] text-[12px] sm:text-[20px] md:text-[28px] sm:leading-[28.8px] mt-2 sm:mt-4">
+        <p className="text-center top-[202px] sm:top-[462px] h-[36px] sm:h-[84px] w-[300px] sm:w-[500px] md:w-[637px] left-[109px] sm:left-[447px] font-light text-[12px] sm:text-[20px] md:text-[28px] sm:leading-[28.8px] mt-2 sm:mt-4">
           “Go on, start a volunteering event to solve a social challenge in your
           communities where you live, work or school and socialize.”
         </p>
