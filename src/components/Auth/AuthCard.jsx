@@ -15,7 +15,7 @@ export const AuthCard = ({
     subText
 }) => {
     return(
-        <div className='auth-card absolute top-10 px-3 sm:px-32 pt-10 pb-40 object-center rounded-3xl border max-h-[90%] max-w-[700px] min-w-[350px] bg-white z-10'>
+        <div className='auth-card absolute top-10 px-3 sm:px-32 pt-10 pb-20 object-center rounded-3xl border max-h-[90%] max-w-[700px] min-w-[350px] bg-white z-10'>
             <img className="mx-auto" src={src} alt={alt} />
             <h1 className="h1 mt-5 text-center">{text}</h1>
             {

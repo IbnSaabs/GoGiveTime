@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
-
-
+@import url('~video-react/dist/video-react.css'); 
 
 * html {
   padding: 0;
@@ -18,13 +17,19 @@ body {
 
 
 .hero {
+height: 150vh;
 background-image: url('/src/assets/Landing_Page_Images/Frame\ 1.svg');
-/* background-position: top; */
-/* background-position: bottom; */
+background-position: top;
 background-size: cover;
 background-repeat: no-repeat;
 }
 
+.volunteer {
+  background-image: url('/src/assets/Landing_Page_Images/Group\ 48095442.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .mission {
   background-image: url('/src/assets/Landing_Page_Images/Group\ 48095446.svg');
   background-size: contain;
@@ -36,8 +41,7 @@ background-repeat: no-repeat;
 
 
 
-
-.h1 {  
+h1 {  
   font-weight: 500;
   font-size: 32px;
   line-height: 42px;
