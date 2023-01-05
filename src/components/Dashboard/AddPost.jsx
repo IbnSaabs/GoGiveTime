@@ -4,10 +4,6 @@ import { MdInsertPhoto } from "react-icons/md"
 import { Player } from "video-react";
 
 import user from '../../assets/slider_image_2.png';
-import  API_KEY  from "../../utils/service";
-
-    
-
 
 export const AddPost = (props) => {
     const [uploadedImage, setUploadedImage] = React.useState(null);
@@ -45,7 +41,7 @@ export const AddPost = (props) => {
             let lat  = JSON.stringify(position.coords.latitude)
             let lgt = JSON.stringify(position.coords.longitude);
             fetch(`https://api.radar.io/v1/geocode/reverse?coordinates=${lat},${lgt}`, {
-                headers: {'Authorization': API_KEY}
+                headers: {'Authorization': process.env.REACT_APP_KEY}
             })
             .then(response => response.json())
             .then(data => {
@@ -156,7 +152,7 @@ export const AddPost = (props) => {
 const DeleteUpload = ({top, right, handleItemDelete}) => {
     return <div 
                 onClick={handleItemDelete}
-                className={`relative ${top} ${right}  bg-[#333333] text-gray-300 text-xs h-4 w-4 text-center leading-3 rounded-full hover:cursor-pointer`}>
+                className={`relative ${top} ${right}  bg-[#333333] text-gray-300 text-xs h-4 w-4 text-center leading-4 rounded-full hover:cursor-pointer`}>
                     x
             </div>
 }
