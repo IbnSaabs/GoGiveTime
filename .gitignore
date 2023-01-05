@@ -26,4 +26,4 @@ dist-ssr
 
 
 # private files
-src/utils/service.js
+# src/utils/service.js
