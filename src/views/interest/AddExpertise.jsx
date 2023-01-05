@@ -31,7 +31,7 @@ const AddExpertise = () => {
         btnText="Sign in"
         btnPath="/sign-in"
         className="relative h-[calc(100vh-73px)] flex justify-center items-center"
-        cardClassName="flex flex-col shadow-lg rounded-3xl border max-h-[90%] h-fit  w-[90%] sm:w-4/5 lg:w-3/6 bg-white z-10  py-5"
+        cardClassName="flex flex-col shadow-lg rounded-3xl border max-h-[90%] h-fit  w-[95vw] sm:w-4/5 lg:w-3/6 bg-white z-10  py-5"
         title="Add Expertise"
         subTitle="Your feed will be personalised based on your skills. Don’t worry
                 you can change it later."

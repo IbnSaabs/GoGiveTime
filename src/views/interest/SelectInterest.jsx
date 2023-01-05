@@ -113,7 +113,7 @@ const SelectInterests = () => {
       btnText="Sign in"
       btnPath="/sign-in"
       className="relative h-[calc(100vh-73px)] flex items-center justify-center"
-      cardClassName="flex flex-col justify-center  shadow-lg rounded-3xl border max-h-[90%] w-5/6 sm:w-4/6 lg:w-3/6 bg-white z-10 px-[22px] py-5"
+      cardClassName="flex flex-col justify-center  shadow-lg rounded-3xl border max-h-[90%] w-[95vw] sm:w-5/6 lg:w-3/6 bg-white z-10 px-[22px] py-5"
       title="Select Your Interest"
       subTitle="Your feed will be personalized based on your interests. Don’t
               worry you can change it later."
