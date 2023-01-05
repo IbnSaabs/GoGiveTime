@@ -34,18 +34,14 @@ export const AddPost = (props) => {
         let fileUploaded = event.target.files[0];
         let fileSize = Math.round((fileUploaded.size/1024))
         setUploadedVideo(fileUploaded);
-        setUploadedImage(null)
-        // if(fileSize < 125){                // check file size, if it greate than 25MB
-        // }else{
-        //     alert('File is too large. file size 10MB or less is acceptible!')
-        // }
+        setUploadedImage(null);
       };
     const videoDelete = () => setUploadedVideo(null);
 
 
     // location upload 
     const handleAddLocation = () => {
-        const myPosition = navigator.geolocation.getCurrentPosition((position) => {
+        navigator.geolocation.getCurrentPosition((position) => {
             let lat  = JSON.stringify(position.coords.latitude)
             let lgt = JSON.stringify(position.coords.longitude);
             fetch(`https://api.radar.io/v1/geocode/reverse?coordinates=${lat},${lgt}`, {
@@ -64,7 +60,7 @@ export const AddPost = (props) => {
 
     return (
         <section className="w-full bg-white pt-2.5 pb-1 rounded">
-            <div className="flex w-11/12 gap-x-2 mx-2 my-3 pt-4 pb-10 px-4">
+            <div className="flex w-11/12 gap-x-2 mx-2 my-3 pt-4 pb-12 px-4">
                 <div className='w-10 h-10 '><img src={user} alt="user-avatar" className="aspect-[1/1] rounded-full"  /></div> 
                 <div className='w-full'>     
                     <div className="flex gap-x-2.5">  
@@ -74,8 +70,8 @@ export const AddPost = (props) => {
                             style={{overflow: 'hidden', resize: 'none'}}> 
                         </textarea>  
                         {currentLocation && 
-                            <div className="text-sm flex mx-auto leading-3 gap-x-1 text-gray-600">
-                                <BsFillGeoAltFill className="text-sm text-black" /> {currentLocation}
+                            <div className="text-sm flex mx-auto leading-3 gap-x-1 text-[#01B0F1]">
+                                <BsFillGeoAltFill className="text-sm text-[#01B0F1]" /> {currentLocation}
                                 <DeleteUpload 
                                     top="top-[-10px]"
                                     right="right-35px]"
