@@ -12,16 +12,18 @@ const Header = () => {
             alt=""
             className="w-[40.44px] h-[50px] sm:w-[60px] md:w-[80.88px]  sm:h-[80px] md:h-[100px]"
           />
-          <h1 className="font-bold md:text-4xl text-[15px] sm:text-2xl">GoGive Time</h1>
+          <h1 className="font-bold md:text-4xl text-[15px] sm:text-2xl">
+            GoGive Time
+          </h1>
         </div>
         <div className="flex items-center gap-[10px] md:w-[350px]">
           <Link to={"/sign-in"}>
-            <button className="border-[2px] border-[#EE364F] text-[#EE364F] text-[12px] sm:text-[20px] font-bold rounded-[2px] sm:rounded-[10px] w-[65px] sm:w-[100px] md:w-[145px] sm:h-[45px] md:h-[56px]">
+            <button className="border-[2px] border-[#EE364F] text-[#EE364F] text-[12px] sm:text-[20px] font-bold rounded-[2px] sm:rounded-[10px] w-[65px] sm:w-[100px] md:w-[145px] sm:h-[45px] md:h-[56px] transition duration-0 hover:duration-150  hover:-translate-y-1 hover:scale-110 ease-out">
               Sign In
             </button>
           </Link>
           <Link to={"/sign-up"}>
-            <button className="border-[2px] border-[#EE364F] text-white bg-[#EE364F] text-[12px] sm:text-[20px] font-bold rounded-[2px] sm:rounded-[10px] w-[65px] sm:w-[100px] md:w-[145px] sm:h-[45px] md:h-[56px]">
+            <button className="border-[2px] border-[#EE364F] text-white bg-[#EE364F] text-[12px] sm:text-[20px] font-bold rounded-[2px] sm:rounded-[10px] w-[65px] sm:w-[100px] md:w-[145px] sm:h-[45px] md:h-[56px]  transition duration-0 hover:duration-150  hover:-translate-y-1 hover:scale-110 ease-out">
               Sign Up
             </button>
           </Link>

@@ -2,7 +2,7 @@ import React from "react";
 import { useGlobalState } from "../utils/store";
 import stars from "../assets/Landing_Page_Images/sidebar/stars.svg"
 
-const Sidebar = () => {
+const ProfileCard = () => {
   const [user] = useGlobalState("user");
   return (
     <div >
@@ -15,13 +15,13 @@ const Sidebar = () => {
 
 const User = ({user}) => {
   return (
-    <div className="w-[309px] h-[520px]">
-      <img src={user.img} className="h-[162px]" alt="" />
-      <div className="flex flex-col items-center h-150p gap-4 pt-6 pb-4">
+    <div className="bg-white w-full h-[520px]">
+      <img src={user.img} className="" alt="" />
+      <div className="flex flex-col items-center gap-4 pt-6 pb-4">
         <div className="text-center">
-          <h1 className="border-2 text-[14px] font-bold">{user.name}</h1>
-          <p className="border-2 text-[10px] font-medium">{user.career}</p>
-          <p className="border-2 text-[10px] font-medium">{user.location}</p>
+          <h1 className="text-[14px] font-bold">{user.name}</h1>
+          <p className="text-[10px] font-medium">{user.career}</p>
+          <p className="text-[10px] font-medium">{user.location}</p>
         </div>
         <div className="gap-[30px] flex justify-between">
           <div className="flex flex-col items-center justify-between">
@@ -62,4 +62,4 @@ const User = ({user}) => {
   );
 };
 
-export default Sidebar;
+export default ProfileCard;

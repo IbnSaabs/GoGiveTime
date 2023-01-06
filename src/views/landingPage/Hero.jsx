@@ -11,7 +11,7 @@ const Hero = () => {
           You <br />
           <span className="text-[#EC3138]"> Grow </span>
           and you
-          <span className="text-[#EC3138]"> Lead<span className=" text-to-b from-[#01B0F1] to-[#EC3138]">!</span></span>
+          <span className="text-[#EC3138]"> Lead <span className=" text-to-b from-[#01B0F1] to-[#EC3138]">!</span></span>
         </h1>
         <p className="text-center top-[202px] sm:top-[462px] h-[36px] sm:h-[84px] w-[300px] sm:w-[500px] md:w-[637px] left-[109px] sm:left-[447px] font-light text-[12px] sm:text-[20px] md:text-[28px] sm:leading-[28.8px] mt-2 sm:mt-4">
           “Go on, start a volunteering event to solve a social challenge in your
@@ -23,7 +23,7 @@ const Hero = () => {
           sm:left-[563px] gap-[12px] sm:gap-[24px]"
           >
           <Link to={"/sign-up"}>
-            <button className="border-[2px] border-[#EE364F] text-white bg-[#EE364F] text-[12px] sm:text-[20px] font-bold rounded-[2px] sm:rounded-[10px] w-[65px] sm:w-[100px] md:w-[145px] sm:h-[45px] md:h-[56px]">
+            <button className="border-[2px] border-[#EE364F] text-white bg-[#EE364F] text-[12px] sm:text-[20px] font-bold rounded-[2px] sm:rounded-[10px] w-[65px] sm:w-[100px] md:w-[145px] sm:h-[45px] md:h-[56px]  transition duration-0 hover:duration-150  hover:-translate-y-1 hover:scale-110 ease-out">
               Sign Up
             </button>
           </Link>

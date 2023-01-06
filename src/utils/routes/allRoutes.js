@@ -15,8 +15,6 @@ import SelectInterests from "../../views/interest/SelectInterest";
 import AddExpertise from "../../views/interest/AddExpertise";
 import RegistrationSuccess from "../../views/interest/RegistrationSuccessfull";
 import LandingPage from "../../views/LandingPage";
-import Sidebar from "../../components/Sidebar";
-import RecommendedEvents from "../../components/RecommendedEvents";
 
 //dasboard imports
 import Feed from "../../views/dashboard/pages/Feed";
@@ -53,9 +51,6 @@ const routes = [
   { path: "/profile", element: <Profile /> },
   { path: "/messages", element: <Message /> },
   { path: "/notifications", element: <Notification /> },
-  //route for ssidebar so i can see what i am coding
-  { path: "/sidebar", element: <Sidebar /> },
-  { path: "/event", element: <RecommendedEvents/> },
 ];
 
 export { routes };
