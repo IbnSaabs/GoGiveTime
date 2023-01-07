@@ -1,8 +1,6 @@
 import React from "react";
-import sidebar from "../../assets/Sidebar.png";
-import recommended from "../../assets/recommended.png";
 import { useLocation } from "react-router";
-import ProfileCard from "../Sidebar";
+import ProfileCard from "../ProfileCard";
 import RecommendedEvents from "../RecommendedEvents";
 
 const SideBar = () => {
