@@ -1,13 +1,18 @@
 import React from "react";
-import {Layout, AddPost} from "../../../components/Dashboard";
-import post from "../../../assets/Content.png";
+
+import {Layout, AddPost, Posts} from "../../../components/Dashboard";
+import posts from "../../../utils/testData";
+
 
 const Feed = () => {
   return (
     <Layout>
-      {/* replace below image with addPost,Photo post frame */}
       <AddPost />
-      {/* <img src={post} className="w-full" alt="" /> */}
+      {posts.map((post) => (  
+        <React.Fragment  key={post.id}>        
+          <Posts post={post} />
+        </React.Fragment>      
+      ))}
     </Layout>
   );
 };

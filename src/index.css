@@ -21,7 +21,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-
 .hero {
 height: 150vh;
 background-image: url('/src/assets/Landing_Page_Images/Frame\ 1.svg');
@@ -53,6 +52,16 @@ h1 {
   line-height: 42px;
 
   color: #333333;
+}
+
+
+.like-icon-btn {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
 }
 
 

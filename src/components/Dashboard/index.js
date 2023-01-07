@@ -1,3 +1,4 @@
-export * from './AddPost';
 export * from './Header';
 export * from './Layout';
+export * from './AddPost';
+export * from './Posts';
