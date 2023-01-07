@@ -5,33 +5,6 @@ import { MdOutlineDelete, MdOutlineModeEditOutline } from "react-icons/md";
 import profilePhoto from "../../assets/comment_profile_photo.svg";
 import commentOwnerPhoto from "../../assets/profilePhoto.svg";
 
-const comments = [
-  {
-    id: 1,
-    name: "Nana Adwoa Mensah",
-    img: profilePhoto,
-    comment:
-      "Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You’ve nailed the design and the responsiveness at various breakpoints works really well.",
-    owner: false,
-  },
-  {
-    id: 2,
-    name: "Franca Adwoa Mensah",
-    img: profilePhoto,
-    comment:
-      "Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You’ve nailed the design and the responsiveness at various breakpoints works really well.",
-    owner: false,
-  },
-  {
-    id: 3,
-    name: "Dmitry Kargaev Asamoah",
-    img: commentOwnerPhoto,
-    comment:
-      "Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You’ve nailed the design and the responsiveness at various breakpoints works really well.",
-    owner: true,
-  },
-];
-
 const filterData = [
   {
     id: 1,
@@ -47,7 +20,7 @@ const filterData = [
   },
 ];
 
-const Comment = () => {
+const Comment = ({ comments }) => {
   const [filterOpen, setFilterOpen] = React.useState(false);
   const [filter, setFilter] = React.useState("Most Recent");
 
@@ -55,9 +28,10 @@ const Comment = () => {
     setFilter(title);
     setFilterOpen(false);
   };
+  console.log("commentss", comments);
 
   return (
-    <div className="w-full bg-white mt-5 px-2 sm:px-8 pb-5">
+    <div className="w-full bg-white px-2 sm:px-8 pb-5">
       <div className="flex items-center pt-5 hover:cursor-pointer text-gray-500 hover:text-gray-600">
         {/* <p className="text-lg font-semibold  mr-3">Most Recent</p>
         <IoMdArrowDropdown size={25} /> */}
@@ -91,7 +65,7 @@ const Comment = () => {
           </div>
         </div>
       </div>
-      {comments.map((comment) => (
+      {comments?.map((comment) => (
         <div key={comment.id} className="mt-5 mb-5 grid grid-cols-7 gap-2">
           <div className="col-span-1  flex ">
             <img
@@ -152,7 +126,7 @@ const Comment = () => {
               />
             </div>
             <div class="col-span-8 sm:col-span-6 px-4 py-2 mb-2 sm:mb-0 bg-white border-2 border-gray-400 rounded-lg">
-              <label for="comment" class="sr-only">
+              <label htmlFor="comment" class="sr-only">
                 Your comment
               </label>
               <textarea
