@@ -117,7 +117,7 @@ const Comment = ({ comments }) => {
         </p>
 
         <form onSubmit={(e) => e.preventDefault()}>
-          <div class="w-full grid grid-cols-9 gap-1 sm:gap-3 mb-4 ">
+          <div className="w-full grid grid-cols-9 gap-1 sm:gap-3 mb-4 ">
             <div className="col-span-1 sm:col-span-1 sm:self-start sm:place-self-end ">
               <img
                 src={commentOwnerPhoto}
@@ -125,21 +125,21 @@ const Comment = ({ comments }) => {
                 alt="owner profile photo"
               />
             </div>
-            <div class="col-span-8 sm:col-span-6 px-4 py-2 mb-2 sm:mb-0 bg-white border-2 border-gray-400 rounded-lg">
-              <label htmlFor="comment" class="sr-only">
+            <div className="col-span-8 sm:col-span-6 px-4 py-2 mb-2 sm:mb-0 bg-white border-2 border-gray-400 rounded-lg">
+              <label htmlFor="comment" className="sr-only">
                 Your comment
               </label>
               <textarea
                 id="comment"
                 rows="3"
-                class="w-full px-0 resize-none  text-gray-500 bg-white border-0 focus:ring-0"
+                className="w-full px-0 resize-none  text-gray-500 bg-white border-0 focus:ring-0"
                 placeholder="Add a comment..."
                 required
               ></textarea>
             </div>
             <button
               type="submit"
-              class="col-span-9 sm:col-span-2 place-self-end border sm:self-start sm:place-self-start w-1/3 sm:w-2/3 py-2.5  font-semibold text-center text-white bg-[#01B0F1] rounded-md focus:ring-4 focus:ring-blue-200"
+              className="col-span-9 sm:col-span-2 place-self-end border sm:self-start sm:place-self-start w-1/3 sm:w-2/3 py-2.5  font-semibold text-center text-white bg-[#01B0F1] rounded-md focus:ring-4 focus:ring-blue-200"
             >
               Send
             </button>
