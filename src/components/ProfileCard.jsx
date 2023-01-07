@@ -15,13 +15,13 @@ const Sidebar = () => {
 
 const User = ({ user }) => {
   return (
-    <div className="w-full h-[520px]">
+    <div className="w-full h-[520px] bg-white">
       <img src={user.img} className="h-[162px]" alt="" />
       <div className="flex flex-col items-center h-150p gap-4 pt-6 pb-4">
         <div className="text-center">
-          <h1 className="border-2 text-[14px] font-bold">{user.name}</h1>
-          <p className="border-2 text-[10px] font-medium">{user.career}</p>
-          <p className="border-2 text-[10px] font-medium">{user.location}</p>
+          <h1 className="text-[14px] font-bold">{user.name}</h1>
+          <p className="text-[10px] font-medium">{user.career}</p>
+          <p className="text-[10px] font-medium">{user.location}</p>
         </div>
         <div className="gap-[30px] flex justify-between">
           <div className="flex flex-col items-center justify-between">
@@ -30,7 +30,7 @@ const User = ({ user }) => {
             </h1>
             <p className="text-[12px] text-[#666666]">Hours</p>
           </div>
-          <div className="w-[100px] flex flex-col items-center justify-between">
+          <div className="w-[100px] flex flex-col items-center justify-between pt-4">
             <img src={stars} alt="" />
             <p className="text-[12px] text-[#666666]">Rating {user.rating} </p>
           </div>
@@ -65,11 +65,9 @@ const User = ({ user }) => {
       <div className="p-4 flex flex-col items-center">
         <div className="w-[250px] gap-[14px] flex justify-between">
           <button className="w-[106px] h-[38px] p-[10px] rounded-[10px] bg-[#EC3138] text-white text-[14px] font-medium">
-            {" "}
             Share Profile
           </button>
           <button className="w-[130px] h-[38px] p-[10px] rounded-[10px]  bg-[#FFDF0D] text-white text-[14px] font-medium">
-            {" "}
             Invite Friends 3
           </button>
         </div>
