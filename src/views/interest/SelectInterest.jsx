@@ -19,7 +19,7 @@ import icon17 from "../../assets/interest/goals/sdg_icons_color_goal_17.svg";
 import heart from "../../assets/interest/heart.png";
 
 import InterestPageLayout from "../../components/Interest/InterestPageLayout";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const interests = [
   {
@@ -97,7 +97,9 @@ const interests = [
 const SelectInterests = () => {
   const [selected, setSelected] = useState([]);
 
-  const handleClick = (id) => {
+  const navigate = useNavigate();
+
+  const handleSelect = (id) => {
     const itemExist = selected.includes(id);
 
     if (itemExist) {
@@ -106,6 +108,12 @@ const SelectInterests = () => {
     } else {
       setSelected((prev) => [...prev, id]);
     }
+  };
+
+  // prevent user from navigating to the next page if not interest is selected otherwise continue
+  const handleContinue = (e) => {
+    e.preventDefault();
+    selected.length > 0 ? navigate("/add-expertise") : alert("error");
   };
 
   return (
@@ -118,6 +126,8 @@ const SelectInterests = () => {
       subTitle="Your feed will be personalized based on your interests. Don’t
               worry you can change it later."
       linkTo="/sign-in"
+      continueBtn={Boolean(selected.length > 0)}
+      handleContinue={handleContinue}
     >
       {/* card header end  */}
       <div className="grid grid-cols-3 sm:grid-cols-4 gap-5  ">
@@ -125,7 +135,7 @@ const SelectInterests = () => {
           <div
             key={item.id}
             className="relative hover:cursor-pointer"
-            onClick={() => handleClick(item.id)}
+            onClick={() => handleSelect(item.id)}
           >
             <img
               src={item.icon}
@@ -151,14 +161,14 @@ const SelectInterests = () => {
       </div>
       {/* card action  */}
       <div className="my-8 text-center ">
-        <Link to={"/add-expertise"}>
-          <button
-            type="button"
-            className="text-white w-4/5 sm:w-1/2 mt-5 border  bg-[#01B0F1] hover:bg-[#039ad1] focus:ring-4 focus:ring-blue-300 shadow-md font-medium rounded-[10px] text-sm px-5 py-2.5 mx-auto mb-2 "
-          >
-            Continue
-          </button>
-        </Link>
+        <button
+          type="button"
+          className="text-white w-4/5 sm:w-1/2 mt-5 border  bg-[#01B0F1] hover:bg-[#039ad1] focus:ring-4 focus:ring-blue-300 shadow-md font-medium rounded-[10px] text-sm px-5 py-2.5 mx-auto mb-2 disabled:cursor-not-allowed disabled:bg-blue-400"
+          disabled={Boolean(!selected.length > 0)}
+          onClick={handleContinue}
+        >
+          Continue
+        </button>
       </div>
     </InterestPageLayout>
   );
