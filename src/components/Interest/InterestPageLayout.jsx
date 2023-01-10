@@ -1,7 +1,7 @@
 import React from "react";
 import svg1 from "../../assets/pattern-top.svg";
 import svg2 from "../../assets/pattern-bottom.svg";
-import { FiArrowLeft } from "react-icons/fi";
+import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
 import Header from "./Header";
 import { Link } from "react-router-dom";
 
@@ -13,6 +13,8 @@ const InterestPageLayout = ({
   title,
   subTitle,
   linkTo,
+  continueBtn,
+  handleContinue,
   children,
 }) => {
   return (
@@ -48,6 +50,11 @@ const InterestPageLayout = ({
                   <div className="text-xl sm:text-2xl  font-medium mx-auto">
                     {title}
                   </div>
+                  {continueBtn && (
+                    <div className="sm:hidden text-xl hover:cursor-pointer">
+                      <FiArrowRight onClick={handleContinue} />
+                    </div>
+                  )}
                 </div>
                 <p className="text-center  font-normal text-xs sm:text-lg">
                   {subTitle}
