@@ -3,7 +3,7 @@
 
 @font-face {
   font-family: 'AirBnb';
-  src: url('/fonts/AirbnbCereal_W_Md.otf');
+  src: url('/fonts/AirbnbCereal_W_Lt.otf');
 }
 
 
@@ -44,15 +44,13 @@ background-repeat: no-repeat;
 
 
 
-
-
-h1 {  
+/* h1 {  
   font-weight: 500;
   font-size: 32px;
   line-height: 42px;
 
   color: #333333;
-}
+} */
 
 
 .like-icon-btn {

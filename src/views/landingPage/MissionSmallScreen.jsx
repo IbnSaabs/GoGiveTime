@@ -22,7 +22,7 @@ const MissionSmallScreen = () => {
           </p>
         </div>
         <Link to={"/sign-up"}>
-          <button className="border-[2px] border-[#EE364F] text-white bg-[#EE364F] text-[12px] sm:text-[20px] font-bold rounded-[2px] sm:rounded-[10px] w-[65px] sm:w-[100px] md:w-[145px] sm:h-[45px] md:h-[56px]">
+          <button className="border-[2px] border-[#EE364F] text-white bg-[#EE364F] text-[12px] sm:text-[20px] font-bold rounded-[2px] sm:rounded-[10px] w-[65px] sm:w-[100px] md:w-[145px] sm:h-[45px] md:h-[56px] transition ease-out delay-150 hover:scale-110 duration-300">
             Sign Up
           </button>
         </Link>
