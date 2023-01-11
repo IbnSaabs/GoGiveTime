@@ -16,7 +16,7 @@ const Sidebar = () => {
 const User = ({ user }) => {
   return (
     <div className="w-full h-[520px] bg-white">
-      <img src={user.img} className="h-[162px]" alt="" />
+      <img src={user.img} className="h-fit w-full" alt="" />
       <div className="flex flex-col items-center h-150p gap-4 pt-6 pb-4">
         <div className="text-center">
           <h1 className="text-[14px] font-bold">{user.name}</h1>

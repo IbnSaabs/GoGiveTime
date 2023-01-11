@@ -20,10 +20,10 @@ import gif18 from "../../assets/Landing_Page_Images/gifs/gif5.gif";
 
 const Volunteering = () => {
   return (
-    <div className="w-full p-5 md:p-10 md:h-[1040px] sm:top-[1822px] sm:left-[93px] flex flex-col items-center">
+    <div className="w-full p-5 md:p-10 md:h-[1040px] sm:top-[1822px] sm:left-[93px] flex flex-col items-center justify-center">
       <Frames />
       <div
-        className="w-[212px] sm:w-[400px] md:w-[796.46px] h-[52px] md:h-[196px] top-[1410px] sm:top-[1670px] md:top-[2100px] left-[90px] sm:left-[180px] md:left-[230px] flex flex-col justify-between items-center p-0 gap-[20px]    
+        className="w-[212px] sm:w-[400px] md:w-[796.46px] h-[52px] md:h-[196px]  flex flex-col justify-between items-center p-0 gap-[20px]    
       absolute"
       >
         <h1
