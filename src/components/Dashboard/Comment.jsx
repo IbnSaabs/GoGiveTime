@@ -66,15 +66,15 @@ const Comment = ({ comments }) => {
         </div>
       </div>
       {comments?.map((comment) => (
-        <div key={comment.id} className="mt-5 mb-5 grid grid-cols-7 gap-2">
-          <div className="col-span-1  flex ">
+        <div key={comment.id} className="mt-5 mb-5 grid grid-cols-7 sm:gap-2">
+          <div className="col-span-1  ">
             <img
               src={comment.img}
-              className="mx-auto h-10 w-10 sm:h-16 sm:w-16 rounded-full  object-cover"
+              className="mx-auto h-10 w-10 sm:h-16 sm:w-16 rounded-full object-cover "
               alt="Profile photo"
             />
           </div>
-          <div className="col-span-6 flex flex-col relative">
+          <div className="col-span-6 flex flex-col relative pl-1 sm:pl-0">
             <div className="flex justify-between items-center mb-5 ">
               <div className="flex items-center">
                 <p className="text-sm sm:text-base font-semibold mr-4">
@@ -117,7 +117,7 @@ const Comment = ({ comments }) => {
         </p>
 
         <form onSubmit={(e) => e.preventDefault()}>
-          <div className="w-full grid grid-cols-9 gap-1 sm:gap-3 mb-4 ">
+          <div className="w-full grid grid-cols-9 sm:gap-3 mb-4 ">
             <div className="col-span-1 sm:col-span-1 sm:self-start sm:place-self-end ">
               <img
                 src={commentOwnerPhoto}
@@ -125,7 +125,7 @@ const Comment = ({ comments }) => {
                 alt="owner profile photo"
               />
             </div>
-            <div className="col-span-8 sm:col-span-6 px-4 py-2 mb-2 sm:mb-0 bg-white border-2 border-gray-400 rounded-lg">
+            <div className="col-span-8 sm:col-span-6 px-4 ml-1 sm:ml-0 py-2 mb-2 sm:mb-0 bg-white border-2 border-gray-400 rounded-lg">
               <label htmlFor="comment" className="sr-only">
                 Your comment
               </label>
